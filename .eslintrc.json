@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "plugin:adonis/typescriptApp",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "format": ["snake_case", "camelCase", "UPPER_CASE", "PascalCase"]
+      }
+    ]
+  }
+}
